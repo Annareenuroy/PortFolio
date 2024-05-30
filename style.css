@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Handlee&display=swap");
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Normalize CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /*   box-sizing: border-box; */
+}
+
+:root {
+  --rose-gold-color1: #b76e79;
+  --rose-gold-color2: rgba(183, 110, 121, 0.8);
+  --rose-pink-color: rgba(247, 202, 201, 0.8);
+}
+
+/* Base Styles
+-----------------------------*/
+
+body {
+  font-family: "Helvetica", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive, sans-serif;
+  font-size: 100px;
+  /*    line-height:1; */
+  color: var(--rose-gold-color1);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Header Styles
+-----------------------------------
+
+/* navbar styles */
+/* Default styles for larger screens */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 10px;
+  background-color: #fff;
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li a,
+.hire-link {
+  min-width: 70px;
+  padding: 10px 20px;
+  margin: 12px;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.hire-link {
+  background-color: var(--rose-gold-color1);
+  border-radius: 35px;
+  color: white;
+  font-size: 18px;
+}
+
+.hire-link {
+  background-color: var(--rose-gold-color1);
+  border-radius: 35px;
+  color: white;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--rose-gold-color1);
+}
+
+nav li button:hover,
+.more:hover {
+  background-color: var(--rose-pink-color);
+  color: #222;
+  /*   padding:6px;
+  margin:7px; */
+  border-radius: 35px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* welcome-section styles*/
+#welcome-section {
+  padding: 230px 150px 120px 150px;
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+/* .welcome-words-container  */
+.welcome-words-container {
+  width: 400px;
+  height: 350px;
+  padding: 20px;
+}
+
+p {
+  font-family: "Handlee", serif;
+  font-size: 21px;
+}
+
+.welcome-img img {
+  width: 280px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.email-btn {
+  font-family: "Handlee", serif;
+  background-color: var(--rose-pink-color);
+  padding: 10px 15px;
+  margin: 20px 0;
+  font-size: 18px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.email-btn:hover {
+  color: white;
+  background-color: rgba(183, 110, 121, 0.8);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* about section */
+#about {
+  background-color: var(--rose-pink-color);
+  margin-top: 20px;
+  padding: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img img {
+  width: 250px;
+  height: auto;
+  border-radius: 20%;
+  border: 5px solid white;
+}
+
+.about-para-container {
+  overflow: hidden;
+  padding: 20px;
+}
+
+.about-para-container h2 {
+  font-size: 60;
+  color: white;
+  padding: 40px 0 15px 0;
+}
+
+#about p {
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+
+/*  project section */
+#projects {
+  margin-top: 20px;
+  padding: 100px;
+  /* background-color: #ddd; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1500px;
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--rose-gold-color2);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.project img {
+  width: 100%;
+  max-width: 550px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+
+.project::after {
+  content: "";
+  width: 350px;
+}
+
+h2 {
+  font-family: "Dancing Script", cursive, sans-serif;
+  font-size: 50px;
+  color: var(--rose-gold-color1);
+}
+
+#projects h2,
+.project-title {
+  text-align: center;
+  padding-bottom: 20px;
+  color: var(--rose-gold-color1);
+}
+
+
+
+#contact h2,
+#contact p {
+  text-align: center;
+}
+
+#contact p {
+  font-family: "helvetica", sans-serif;
+}
+.contact-links {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.contact-links a {
+  padding: 10px;
+}
+
+.contact-links a:hover {
+  color: var(--rose-pink-color);
+}
+
+/* Footer Styles
+------------------------------------ */
+footer {
+  background-color: var(--rose-pink-color);
+  padding-top: 20px;
+  display: block;
+}
+
+footer > p {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  text-align: center;
+  font: normal 15px sans-serif;
+}
+
+/* Responsive Design (Media Queries)
+------------------------------------*/
+
+@media (max-width: 768px) {
+  #navbar {
+    padding-top: 5px;
+  }
+
+  ul li a,
+  .hire-link {
+    min-width: auto;
+    padding: 10px 15px;
+    margin: 8px;
+  }
+
+  #welcome-section {
+    margin-top: 120px;
+    margin-bottom: 520px;
+  }
+
+  #welcome-section,
+  #about {
+    flex-direction: column-reverse;
+  }
+
+  .welcome-img img {
+    width: 100vw;
+    border-radius: 0;
+  }
+
+  .about-para-container h2 {
+    padding: 0;
+  }
+}
+
+@media (max-width: 501px) {
+  ul li a,
+  .hire-link {
+    padding: 6px 7px;
+  }
+
+  #welcome-section {
+    margin-bottom: 291px;
+  }
+}
+
+@media (max-width: 412px) {
+  ul li a,
+  .hire-link {
+    padding: 3px 2px;
+  }
+
+  #welcome-section {
+    margin-bottom: 200px;
+  }
+}
+
+@media (max-width: 360px) {
+  ul li a,
+  .hire-link {
+    padding: 2px 1px;
+  }
+  .welcome-words-container {
+    min-width: auto;
+    /* min-height:auto; */
+    padding-left: 70px;
+  }
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: rose;
+  padding: 20px;
+}
